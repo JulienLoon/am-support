@@ -19,7 +19,7 @@ const Sidebar: React.FC = () => {
         const token = localStorage.getItem('token');
         if (!token) throw new Error('No token found');
 
-        const response = await axios.get('http://localhost:3002/api/auth/userinfo', {
+        const response = await axios.get('http://192.168.1.15:3002/api/auth/userinfo', {
           headers: {
             Authorization: `Bearer ${token}`,
           },

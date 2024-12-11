@@ -2,7 +2,7 @@
 
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:3002';
+const API_BASE_URL = 'http://192.168.1.15:3002';
 
 interface AppData {
     name: string;

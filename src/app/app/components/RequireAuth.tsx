@@ -25,7 +25,7 @@ const RequireAuth: React.FC<RequireAuthProps> = ({ children }) => {
             }
 
             try {
-                const response = await fetch('http://localhost:3002/api/auth/checkToken', {
+                const response = await fetch('http://192.168.1.15:3002/api/auth/checkToken', {
                     method: 'POST',
                     headers: {
                         'Authorization': `Bearer ${token}`,
